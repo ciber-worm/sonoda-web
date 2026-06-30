@@ -8,123 +8,135 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header" id="header">
+    <a class="logo" href="#top">株式会社園田工作所</a>
+    <button class="menu-button" id="menuButton" aria-label="メニューを開く">Menu</button>
+    <nav class="global-nav" id="globalNav">
+      <a href="#about">会社について</a>
+      <a href="#service">事業内容</a>
+      <a href="#equipment">設備紹介</a>
+      <a href="#works">製品紹介</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
 
-<header class="site-header">
-  <div class="logo">株式会社園田工作所</div>
-  <nav>
-    <a href="#about">会社について</a>
-    <a href="#service">事業内容</a>
-    <a href="#works">製品紹介</a>
-    <a href="#contact">お問い合わせ</a>
-  </nav>
-</header>
-
-<section class="hero">
-
-    <div class="overlay"></div>
-
-    <div class="hero-text">
-
-        <p class="sub">
-            Precision Metal Fabrication
-        </p>
-
-        <h1>
-            確かな加工技術で、<br>
-            ものづくりを支える。
-        </h1>
-
-        <p class="lead">
-            ステンレス・鉄・アルミ加工を中心に、
-            建築金物や特注製作まで
-            お客様のご要望に合わせた製品づくりを行っています。
-        </p>
-
-        <a href="#contact" class="btn">
-            お問い合わせ
-        </a>
-
+  <section class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <p class="eyebrow">Precision Metal Works</p>
+      <h1>確かな加工技術で、<br>ものづくりを支える。</h1>
+      <p class="hero-lead">ステンレス・鉄・アルミ加工を中心に、建築金物や特注製作まで。<br>小ロットから柔軟に対応します。</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn primary">お問い合わせ</a>
+        <a href="#works" class="btn secondary">製品紹介を見る</a>
+      </div>
     </div>
+  </section>
 
-</section>
+  <main>
+    <section id="about" class="section intro reveal">
+      <div class="section-title">
+        <p>About</p>
+        <h2>会社について</h2>
+      </div>
+      <div class="intro-text">
+        <p>株式会社園田工作所は、金属加工を通じてお客様のものづくりを支える会社です。長年培ってきた技術と現場対応力を活かし、用途やご要望に合わせた製作を行っています。</p>
+        <p>既製品では対応しにくい一点物・小ロットのご相談にも、現場目線で柔軟に対応いたします。</p>
+      </div>
+    </section>
 
-<main>
+    <section id="service" class="section service-section reveal">
+      <div class="section-title center">
+        <p>Service</p>
+        <h2>事業内容</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span>01</span>
+          <h3>ステンレス加工</h3>
+          <p>耐久性や意匠性が求められる製品・部材の製作に対応します。</p>
+        </article>
+        <article class="service-card">
+          <span>02</span>
+          <h3>鉄・アルミ加工</h3>
+          <p>用途に合わせた素材選定と加工で、各種部材を製作します。</p>
+        </article>
+        <article class="service-card">
+          <span>03</span>
+          <h3>建築金物</h3>
+          <p>建築現場で使用される金物や部材の製作に対応します。</p>
+        </article>
+        <article class="service-card">
+          <span>04</span>
+          <h3>特注・小ロット製作</h3>
+          <p>一点物や少量製作など、既製品では対応しにくいご相談にも柔軟に対応します。</p>
+        </article>
+      </div>
+    </section>
 
-<section id="about" class="section">
-  <h2>会社について</h2>
-  <p>
-    株式会社園田工作所は、金属加工を通じてお客様のものづくりを支える会社です。
-    長年培ってきた技術と現場対応力を活かし、用途やご要望に合わせた製作を行っています。
-  </p>
-</section>
+    <section id="equipment" class="section reveal">
+      <div class="section-title">
+        <p>Factory</p>
+        <h2>設備・工場紹介</h2>
+      </div>
+      <div class="feature-list">
+        <article class="feature-item">
+          <img src="images/factory-inside.jpg" alt="工場内観">
+          <div class="feature-body">
+            <h3>現場対応力を活かした製作体制</h3>
+            <p>金属加工に必要な設備を備え、建築金物や各種金属部材の製作に対応しています。ご相談内容に合わせて、最適な加工方法を検討します。</p>
+          </div>
+        </article>
+        <article class="feature-item reverse">
+          <img src="images/equipment-press.jpg" alt="加工設備">
+          <div class="feature-body">
+            <h3>小ロット・特注品にも柔軟に対応</h3>
+            <p>量産品だけでなく、一点物や試作品などのご相談にも対応。現場で使いやすい形状や仕様を考えながら製作します。</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="service" class="section gray">
-  <h2>事業内容</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>ステンレス加工</h3>
-      <p>耐久性や意匠性が求められる製品・部材の製作に対応します。</p>
-    </div>
-    <div class="card">
-      <h3>鉄・アルミ加工</h3>
-      <p>用途に合わせた素材選定と加工で、各種部材を製作します。</p>
-    </div>
-    <div class="card">
-      <h3>建築金物</h3>
-      <p>建築現場で使用される金物や部材の製作に対応します。</p>
-    </div>
-    <div class="card">
-      <h3>特注・小ロット製作</h3>
-      <p>一点物や少量製作など、既製品では対応しにくいご相談にも柔軟に対応します。</p>
-    </div>
-  </div>
-</section>
+    <section id="works" class="section works-section reveal">
+      <div class="section-title center">
+        <p>Works</p>
+        <h2>製品紹介</h2>
+      </div>
+      <div class="works-grid">
+        <figure><img src="images/product-parts.jpg" alt="金属加工部品"><figcaption>金属加工部品</figcaption></figure>
+        <figure><img src="images/product-ring.jpg" alt="丸物部品"><figcaption>丸物部品</figcaption></figure>
+        <figure><img src="images/product-case.jpg" alt="特注製作品"><figcaption>特注製作品</figcaption></figure>
+        <figure><img src="images/equipment-shelf.jpg" alt="部材管理"><figcaption>部材管理</figcaption></figure>
+        <figure><img src="images/sign.jpg" alt="工場看板"><figcaption>工場外観</figcaption></figure>
+        <figure><img src="images/hero-factory.jpg" alt="工場全景"><figcaption>工場全景</figcaption></figure>
+      </div>
+      <p class="works-text">建築金物、各種金属部材、特注製作品など、お客様の用途に合わせた製作に対応しています。</p>
+    </section>
 
-<section id="equipment" class="section">
-  <h2>設備・工場紹介</h2>
+    <section class="section video-section reveal">
+      <div class="section-title">
+        <p>Movie</p>
+        <h2>加工風景</h2>
+      </div>
+      <div class="video-wrap">
+        <video src="images/factory-video-1.mp4" controls muted playsinline preload="metadata" poster="images/factory-inside.jpg"></video>
+      </div>
+    </section>
 
-  <div class="feature">
-    <img src="images/factory-inside.jpg" alt="工場内観">
-    <div>
-      <h3>工場内観</h3>
-      <p>金属加工に必要な設備を備え、特注品や小ロット製作にも柔軟に対応しています。</p>
-    </div>
-  </div>
+    <section id="contact" class="section contact-section reveal">
+      <div class="contact-box">
+        <p class="eyebrow dark">Contact</p>
+        <h2>お問い合わせ</h2>
+        <p>製作のご相談・お見積もりはお気軽にお問い合わせください。</p>
+        <a href="mailto:info@example.com" class="btn primary">メールで問い合わせる</a>
+        <p class="note">※ メールアドレスは公開前に実際のアドレスへ変更してください。</p>
+      </div>
+    </section>
+  </main>
 
-  <div class="feature reverse">
-    <img src="images/equipment-press.jpg" alt="加工設備">
-    <div>
-      <h3>加工設備</h3>
-      <p>用途や材質に合わせた加工を行い、建築金物や各種金属部材の製作に対応します。</p>
-    </div>
-  </div>
-</section>
-
-<section id="works" class="section gray">
-  <h2>製品紹介</h2>
-
-  <div class="works-grid">
-    <img src="images/product-parts.jpg" alt="金属加工部品">
-    <img src="images/product-ring.jpg" alt="丸物部品">
-    <img src="images/product-case.jpg" alt="特注製作品">
-  </div>
-
-  <p class="works-text">
-    建築金物、各種金属部材、特注製作品など、お客様の用途に合わせた製作に対応しています。
-  </p>
-</section>
-
-<section id="contact" class="section contact">
-  <h2>お問い合わせ</h2>
-  <p>製作のご相談・お見積もりはお気軽にお問い合わせください。</p>
-  <a href="mailto:info@example.com" class="btn">メールで問い合わせる</a>
-</section>
-
-</main>
-
-<footer>
-  <p>&copy; 株式会社園田工作所</p>
-</footer>
-
+  <footer class="site-footer">
+    <p>&copy; 株式会社園田工作所</p>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
