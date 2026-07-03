@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ciber-worm.github.io/sonoda-web/sitemap.xml
+Sitemap: https://sonoda-kousakusho.com/sitemap.xml

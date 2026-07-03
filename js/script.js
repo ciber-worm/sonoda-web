@@ -8,13 +8,13 @@ function updateHeader(){
 window.addEventListener('scroll', updateHeader);
 updateHeader();
 
-menuButton.addEventListener('click', () => {
+if (menuButton && nav && header) menuButton.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   header.classList.toggle('menu-open', isOpen);
   menuButton.setAttribute('aria-expanded', String(isOpen));
 });
 
-nav.querySelectorAll('a').forEach(link => {
+if (nav) nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     header.classList.remove('menu-open');
@@ -43,15 +43,16 @@ document.querySelectorAll('[data-img]').forEach(button => {
 });
 
 function closeLightbox(){
+  if (!lightbox || !lightboxImage) return;
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden', 'true');
   lightboxImage.src = '';
 }
 
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', event => {
+if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+if (lightbox) lightbox.addEventListener('click', event => {
   if(event.target === lightbox) closeLightbox();
 });
 document.addEventListener('keydown', event => {
-  if(event.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  if(event.key === 'Escape' && lightbox?.classList.contains('open')) closeLightbox();
 });
