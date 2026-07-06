@@ -828,3 +828,4 @@ button {
 .works-detail-grid,.works-detail-grid.compact{width:92%;max-width:1600px;padding-left:0;padding-right:0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.works-detail-grid img{height:auto;aspect-ratio:1/1}
 @media(max-width:640px){.works-detail-grid,.works-detail-grid.compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.works-detail-grid figcaption{padding:12px 10px}.works-detail-grid figcaption strong{font-size:15px}.works-detail-grid figcaption span{font-size:9px;letter-spacing:.1em}}
 .detail-card .mold-card-image{object-position:center 48%}
+.company-cta .mobile-break{display:inline}@media(max-width:640px){.company-cta .mobile-break{display:block}}
