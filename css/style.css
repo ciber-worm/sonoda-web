@@ -2016,6 +2016,13 @@ button {
     color: #d2bea0
 }
 
+@media(max-width:640px) {
+    .hero {
+        background-image: url("../images/gaikan.jpg");
+        background-position: center center
+    }
+}
+
 /* Equipment gallery: an even two-column layout with a full-height 150t press. */
 .equipment-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
