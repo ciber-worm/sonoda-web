@@ -144,7 +144,7 @@ button {
     position: relative;
     z-index: 1;
     color: #fff;
-    max-width: 840px
+    max-width: 980px
 }
 
 .eyebrow {
@@ -165,6 +165,10 @@ button {
     letter-spacing: .04em;
     margin-bottom: 26px;
     text-shadow: 0 4px 18px rgba(0, 0, 0, .24)
+}
+
+.hero-mobile-break {
+    display: none
 }
 
 .hero-lead {
@@ -1799,8 +1803,13 @@ button {
 
 @media(max-width:640px) {
     .hero h1 {
-        font-size: 24px;
-        line-height: 1.45
+        font-size: 25px;
+        line-height: 1.45;
+        letter-spacing: 0
+    }
+
+    .hero-mobile-break {
+        display: block
     }
 
     .section-title h2 {
@@ -2019,7 +2028,7 @@ button {
 @media(max-width:640px) {
     .hero {
         background-image: url("../images/gaikan.jpg");
-        background-position: center center
+        background-position: 35% center
     }
 }
 
