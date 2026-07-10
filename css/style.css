@@ -2089,8 +2089,25 @@ button {
     display: inline
 }
 
+.thanks-message {
+    text-align: center
+}
+
+.thanks-message>p {
+    max-width: 720px;
+    margin: 0 auto 28px
+}
+
+.thanks-hero-break {
+    display: inline
+}
+
 @media(max-width:640px) {
     .contact-title-break {
+        display: block
+    }
+
+    .thanks-hero-break {
         display: block
     }
 }
