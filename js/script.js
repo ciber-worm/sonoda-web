@@ -56,3 +56,21 @@ if (lightbox) lightbox.addEventListener('click', event => {
 document.addEventListener('keydown', event => {
   if(event.key === 'Escape' && lightbox?.classList.contains('open')) closeLightbox();
 });
+
+const contactForm = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const emailConfirm = document.getElementById('emailConfirm');
+
+function validateEmailConfirm(){
+  if (!email || !emailConfirm) return;
+  const message = email.value && emailConfirm.value && email.value !== emailConfirm.value
+    ? 'メールアドレスが一致していません。'
+    : '';
+  emailConfirm.setCustomValidity(message);
+}
+
+if (contactForm && email && emailConfirm) {
+  email.addEventListener('input', validateEmailConfirm);
+  emailConfirm.addEventListener('input', validateEmailConfirm);
+  contactForm.addEventListener('submit', validateEmailConfirm);
+}

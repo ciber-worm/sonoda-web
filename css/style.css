@@ -1020,7 +1020,8 @@ button {
 
 .company-cta h2 {
     font-size: clamp(30px, 4vw, 44px);
-    margin-bottom: 28px
+    margin: 0 auto 28px;
+    line-height: 1.35
 }
 
 .company-cta .btn {
@@ -1576,6 +1577,84 @@ button {
     font-size: 18px
 }
 
+.contact-form-section {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.contact-form {
+    display: grid;
+    gap: 24px;
+    margin-top: 34px;
+    padding: 44px;
+    background: #f5f6f7;
+    border: 1px solid #e2e3e5
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.contact-form label {
+    display: block;
+    color: #202226;
+    font-weight: 700
+}
+
+.form-wide {
+    grid-column: 1 / -1
+}
+
+.contact-form label span {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 7px;
+    background: #202226;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    min-width: 0;
+    border: 1px solid #d7d9dc;
+    border-radius: 0;
+    padding: 14px 16px;
+    margin-top: 8px;
+    background: #fff;
+    color: #202226;
+    font: inherit;
+    font-weight: 400
+}
+
+.contact-form textarea {
+    resize: vertical;
+    line-height: 1.8
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #202226;
+    outline-offset: 2px
+}
+
+.form-note {
+    margin-top: -6px;
+    color: #5d6570;
+    font-size: 14px
+}
+
+.form-botcheck {
+    position: absolute;
+    left: -9999px;
+    opacity: 0
+}
+
 .contact-methods {
     max-width: 1040px;
     margin: 0 auto 110px;
@@ -1583,6 +1662,10 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px
+}
+
+.contact-methods-priority {
+    margin-bottom: 72px
 }
 
 .contact-method {
@@ -1788,6 +1871,11 @@ button {
         grid-template-columns: 1fr
     }
 
+    .contact-form-section {
+        padding-left: 6%;
+        padding-right: 6%
+    }
+
     .contact-method {
         padding: 34px 26px
     }
@@ -1798,6 +1886,22 @@ button {
 
     .inquiry-guide>div {
         margin-bottom: 30px
+    }
+}
+
+@media(max-width:640px) {
+    .contact-form {
+        padding: 28px 20px;
+        gap: 20px
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .contact-form label span {
+        margin-left: 6px
     }
 }
 
